@@ -46,8 +46,6 @@ Armazenamento para a Instância (EBS): Um volume EBS é anexado à instância EC
 
 # Diagrama da Arquitetura
 
-![Diagrama da Arquitetura](diagramas/arquitetura-principal.svg)
-
 Esboço para o Diagrama no Draw.io
 
  Roteiro da arquitetura AWS, colocando os serviços em destaque:
@@ -56,4 +54,5 @@ Esboço para o Diagrama no Draw.io
 3.	O S3 Bucket dispara a Lambda Function. Através de um "Evento: Novo Objeto Criado".
 4.	Da Lambda Function em direção a uma Instância EC2. Temos a "Ação: Iniciar Processamento".
 5.	A instância EC2, se conecta a um volume EBS. Que será o "Armazenamento Anexado". Como também adicionamos outro S3 Bucket, denominado de "S3 Bucket de Dados Processados", mostrando que os resultados do processamento são salvos lá.
+
 
